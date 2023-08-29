@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/styles.css">
-    <title>Servicio de Enfermería</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>asistencia de enfermeria</title>
 </head>
 <body>
     <header>
@@ -12,11 +12,13 @@
     </header>
     <main>
         <form id="enfermeriaForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="edad">Edad:</label>
+            <label for="text">turnos actuales:</label>
+            <input type="text" id="text" name="text" required>
+            <label for="edad">fecha de turno</label>
             <input type="number" id="edad" name="edad" required>
-            <button type="submit">Enviar</button>
+            <button type="submit">cantidad de turnos por semana</button>
+            <label for="text">hospitales del area disponibles</label>
+            <input type="text" id="text" name="text" required>
         </form>
     </main>
     <script src="./public/js/script.js"></script>
