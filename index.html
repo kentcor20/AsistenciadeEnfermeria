@@ -1,78 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asistencia de Enfermería</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #007BFF;
-            color: #FFF;
-            padding: 10px;
-        }
-        nav {
-            background-color: #333;
-            color: #FFF;
-            padding: 10px;
-        }
-        nav a {
-            color: #FFF;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        section {
-            padding: 20px;
-        }
-        .center {
-            text-align: center;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons a {
-            display: inline-block;
-            margin: 0 10px;
-            font-size: 20px;
-            color: #333;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+    <title>Servicios de Enfermería</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu hoja de estilos CSS -->
 </head>
 <body>
     <header>
-        <h1>Asistencia de Enfermería</h1>
+        <h1>Servicios de Enfermería</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Acerca de Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
-    </nav>
-    <section>
-        <h2>Servicios de Asistencia de Enfermería</h2>
-        <p>Ofrecemos una variedad de servicios de asistencia de enfermería para cuidar de tu salud y bienestar. Nuestro equipo de enfermeros altamente capacitados está listo para brindarte el mejor cuidado posible.</p>
-        <img src="imagen_servicios.jpg" alt="Servicios de Asistencia de Enfermería">
+
+    <section class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Atención médica domiciliaria</li>
+            <li>Cuidado de pacientes convalecientes</li>
+            <li>Aplicación de tratamientos y medicamentos</li>
+            <li>Cuidado de pacientes de edad avanzada</li>
+        </ul>
+        <img src="servicios.jpg" alt="Servicios de enfermería">
+        <button id="cambiarColor">Cambiar Color</button>
     </section>
-    <section class="center">
+
+    <section class="acerca-de">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos un equipo de enfermeros altamente capacitados...</p>
+        <img src="equipo.jpg" alt="Nuestro equipo de enfermeros">
+    </section>
+
+    <section class="contacto">
         <h2>Contacto</h2>
-        <p>Para obtener más información sobre nuestros servicios, no dudes en contactarnos:</p>
-        <p>Email: info@asistenciaenfermeria.com</p>
-        <p>Teléfono: (123) 456-7890</p>
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
+        <p>Para consultas y citas, por favor contáctenos...</p>
+        <img src="contacto.jpg" alt="Formulario de contacto">
     </section>
+
+    <footer>
+        <p>&copy; 2023 Servicios de Enfermería. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
