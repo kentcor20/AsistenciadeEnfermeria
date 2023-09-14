@@ -1,29 +1,12 @@
-// public/js/script.js
-document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("enfermeriaForm");
+// Obtenemos el botón y la sección de servicios por su ID
+const cambiarColorBtn = document.getElementById("cambiarColor");
+const seccionServicios = document.querySelector(".servicios");
 
-    form.addEventListener("submit", async (event) => {
-        event.preventDefault();
-
-        const nombre = document.getElementById("nombre").value;
-        const edad = document.getElementById("edad").value;
-
-        try {
-            const response = await fetch("/registrar", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ nombre, edad }),
-            });
-
-            if (response.ok) {
-                alert("Registro exitoso");
-            } else {
-                alert("Error en el registro");
-            }
-        } catch (error) {
-            console.error("Error:", error);
-        }
-    });
+// Agregamos un evento de clic al botón
+cambiarColorBtn.addEventListener("click", () => {
+    // Generamos un color aleatorio en formato hexadecimal
+    const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    
+    // Cambiamos el color de fondo de la sección de servicios
+    seccionServicios.style.backgroundColor = randomColor;
 });
