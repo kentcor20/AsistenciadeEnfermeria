@@ -1,7 +1,7 @@
 <?php
 
 
-     $conexion = mysqli_connect("localhost",  "root",  "",  "login_register_db" );
+     $conexion = mysqli_connect("localhost",  "root",  "",  "asistenciaenenfermeria" );
 
      if($conexion){
           echo 'conectado exitosamente a la base de datos';
