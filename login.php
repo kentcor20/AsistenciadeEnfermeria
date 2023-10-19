@@ -42,10 +42,10 @@
                     <!--Register-->
                     <form action="php/registro_usuario_be.php" method="POST" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre completo" name="Nombre completo">
+                        <input type="text" placeholder="Nombre completo" name="nombre_completo">
                         <input type="text" placeholder="Correo Electronico" name="correo">
                         <input type="text" placeholder="Usuario" name="Usuario">
-                        <input type="password" placeholder="Contraseña" name="Contraseña">
+                        <input type="password" placeholder="Contraseña" name="Contrasena">
                         <button>Regístrarse</button>
                     </form>
                 </div>
