@@ -6,7 +6,7 @@
     $correo = $_POST['correo'];
     $contraseña = $_POST['contraseña']
 
-    $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo' and contraseña='$contraseña'");
+    $validar_login = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo' and contrasena='$contrasena'");
 
     if(mysqli_num_rows($validar_login) > 0)^{
         header("location: ../pag.html");
