@@ -11,6 +11,22 @@
                VALUES('$nombre_completo', '$correo','$usuario', '$contrasena')";
 
     $ejecutar = mysqli_query($conexion, $query);
+
+    if($ejecutar){
+        echo '
+            <script>
+                 alert("Usuario almacenamiento exitosamente");
+                 window.location = "../login.php";
+            </script>   
+        ';
+    }else{ 
+        echo '
+        <script>
+             alert("Usuario almacenamiento exitosamente");
+             window.location = "../login.php";
+        </script>   
+    ';
+    }          
 ?>
 
 
