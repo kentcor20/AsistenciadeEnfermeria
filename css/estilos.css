@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(../images/bg3.jpg);
+    background-image: url(../images/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,6 +30,7 @@ main{
 
 .caja__trasera{
     width: 100%;
+
     padding: 10px 20px;
     display: flex;
     justify-content: center;
