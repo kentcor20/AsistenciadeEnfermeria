@@ -28,14 +28,14 @@
         echo '
             <script>
                  alert("Usuario almacenamiento exitosamente");
-                 window.location = "../login.php";
+                 window.location = "../iniciar sesion.php";
             </script>   
         ';
     }else{ 
         echo '
         <script>
              alert("Usuario almacenamiento exitosamente");
-             window.location = "../login.php";
+             window.location = "../iniciar sesion.php";
         </script>   
     ';
     } 
