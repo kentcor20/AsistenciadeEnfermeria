@@ -9,6 +9,18 @@
 
     $query = "INSERT INTO usuarios(nombre_completo,correo,usuario,contrasena)
                VALUES('$nombre_completo', '$correo','$usuario', '$contrasena')";
+    //verificar que el correo no se repita en la base de datos
+    
+    $verificar_correo = mysqli_query($conexio, "SELECT * FROM usuarios WHERE correo='$correo' ");
+
+    if(mysqli_num_rows($verificar_correo) > 0 ){
+       echo'
+          <script>
+                 alert("Este correo ya esta registrado intenta con otro diferente");
+                 windows.location = "../index.php";
+          </script>';
+       ';
+    }
 
     $ejecutar = mysqli_query($conexion, $query);
 
