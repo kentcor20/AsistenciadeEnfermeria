@@ -26,7 +26,8 @@
              window.location = "../login.php";
         </script>   
     ';
-    }          
+    } 
+    mysqli_close($conexion);        
 ?>
 
 
