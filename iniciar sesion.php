@@ -35,7 +35,7 @@
                         <h2>Iniciar Sesión</h2>
                         <input type="text" placeholder="Correo Electronico">
                         <input type="password" placeholder="Contraseña">
-                        <a href="pag.html"><button>Entrar</button></a>
+                        <button>Entrar</button>
                     </form>
 
                     <!--Register-->
