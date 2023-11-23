@@ -1,7 +1,7 @@
 <?php
 
 
-     $conexion = mysqli_connect("localhost",  "root",  "",  "asistenciaenenfermeria");
+     $conexion = mysqli_connect("localhost",  "root",  "",  "enfermeria");
 
      /*
      if($conexion){
@@ -10,7 +10,7 @@
           echo 'no se ha podido conectar a la base de datos';
      } 
      */
-    
+
 ?>
 
 
