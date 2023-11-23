@@ -17,7 +17,7 @@
        echo'
           <script>
                  alert("Este correo ya esta registrado intenta con otro diferente");
-                 windows.location = "../index.php";
+                 windows.location = "../iniciar sesion.php";
           </script>';
        ';
     }
